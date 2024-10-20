@@ -3,7 +3,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}%escribir con acentos sin necesidad de comandos \'{} .
 \usepackage{fancyhdr}
-\usepackage{epsfig}
+\usepackage{fancyhdr}
 \usepackage{epic}
 \usepackage{eepic}
 \usepackage[fleqn]{amsmath}
@@ -93,7 +93,6 @@
 %Inicio del documento. Tener en cuenta que hay archivos auxiliares
 
 \begin{document}
-\pagenumbering{roman}
 \include{HojaTitulo/HojaTituloMSc}
 \renewcommand{\tablename}{\textbf{Table}}
 \renewcommand{\figurename}{\textbf{Figure}}
@@ -104,6 +103,7 @@
 
 %\newcommand{\clearemptydoublepage}{\newpage{\pagestyle{empty}\cleardoublepage}}
 %\cleardoublepage
+\pagenumbering{arabic}
 \tableofcontents
 \addcontentsline{toc}{chapter}{List of figures} % para que aparezca en el indice de contenidos
 \listoffigures % indice de figuras
@@ -111,10 +111,10 @@
 %\cleardoublepage
 \addcontentsline{toc}{chapter}{List of tables} % para que aparezca en el indice de contenidos
 \listoftables % indice de tablas
-
+\
 %\include{Tab_Simbolos/TabSimbolosMSc}
 %\include{Resumen}%\newcommand{\clearemptydoublepage}{\newpage{\pagestyle{empty}\cleardoublepage}}
-\pagenumbering{arabic}
+
 \include{Kap1/Kap1}
 \include{Kap2/Kap2}
 \include{Kap3/Kap3}
