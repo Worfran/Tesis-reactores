@@ -11,7 +11,9 @@
 \usepackage{amscd}
 \usepackage{amsmath}
 \usepackage{here}
-\usepackage{hyperref}
+\usepackage{xcolor}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.5}
+\usepackage[colorlinks=true,allcolors=black, urlcolor=blue]{hyperref}
 \usepackage{romannum}
 \usepackage{listings}
 \usepackage{graphicx}
@@ -22,14 +24,16 @@
 \usepackage{subfigure}
 \usepackage{longtable}
 \usepackage{braket}
-\usepackage{natbib}
+%\usepackage{natbib}
+\usepackage[backend=bibtex,style=ieee,natbib=true]{biblatex}
 \usepackage{mathtools}
 \usepackage{multirow}
 \usepackage{booktabs}
-\bibpunct{(}{)}{;}{a}{}{,} % to follow the A&A style
+%\usepackage{cite} % Add this line for citations
+%\bibpunct{(}{)}{;}{a}{}{,} % to follow the A&A style
 
 
-
+\usepackage{csquotes}
 %Code listing style named "mystyle"
 \lstdefinestyle{mystyle}{
   backgroundcolor=\color{backcolour}, commentstyle=\color{bondiblue},
@@ -91,9 +95,12 @@
 %Neue Kommandos
 \usepackage{Befehle}
 %Inicio del documento. Tener en cuenta que hay archivos auxiliares
+\addbibresource{BibliMSc,Kap1/BibtexChap1,Kap2/BibtexChap2,Kap3/BibtexChap3,Kap4/BibtexChap4,Kap5/BibtexChap5}
 
 \begin{document}
 \include{HojaTitulo/HojaTituloMSc}
+\pagenumbering{arabic}
+
 \renewcommand{\tablename}{\textbf{Table}}
 \renewcommand{\figurename}{\textbf{Figure}}
 \renewcommand{\listtablename}{List of tables}
@@ -103,7 +110,7 @@
 
 %\newcommand{\clearemptydoublepage}{\newpage{\pagestyle{empty}\cleardoublepage}}
 %\cleardoublepage
-\pagenumbering{arabic}
+
 \tableofcontents
 \addcontentsline{toc}{chapter}{List of figures} % para que aparezca en el indice de contenidos
 \listoffigures % indice de figuras
@@ -111,7 +118,7 @@
 %\cleardoublepage
 \addcontentsline{toc}{chapter}{List of tables} % para que aparezca en el indice de contenidos
 \listoftables % indice de tablas
-\
+
 %\include{Tab_Simbolos/TabSimbolosMSc}
 %\include{Resumen}%\newcommand{\clearemptydoublepage}{\newpage{\pagestyle{empty}\cleardoublepage}}
 
@@ -124,6 +131,8 @@
 \include{Kap7/Kap7}
 \include{Anexos/Anexos}
 \addcontentsline{toc}{chapter}{Bibliography}
-\bibliographystyle{IEEEtran} 
-\bibliography{BibliMSc,Kap1/BibtexChap1,Kap2/BibtexChap2,Kap3/BibtexChap3,Kap4/BibtexChap4,Kap5/BibtexChap5}
+%\bibliographystyle{IEEEtran} 
+%\bibliography{BibliMSc,Kap1/BibtexChap1,Kap2/BibtexChap2,Kap3/BibtexChap3,Kap4/BibtexChap4,Kap5/BibtexChap5}
+\nocite{*}%test
+\printbibliography
 \end{document}
