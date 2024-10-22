@@ -16,7 +16,7 @@ The steps involving mining, milling, conversion, enrichment, and fuel fabricatio
 
 Uranium recovery is achieved through extraction from ores, followed by concentration and purification. This process involves both excavation and in-situ leaching (ISL). Typically, open-pit mining is used for deposits near the surface, while underground mining is applied for deeper deposits \cite{fuel_cycle_book}. The mined uranium ore is then processed by grinding, followed by uranium leaching using either alkaline or acidic methods. The milling process yields ``yellowcake'', which contains uranium in the form of \(U_3O_8\), with a uranium content greater than \(80\%\) \cite{fuel_cycle_book}.
 
-Approximately 200 tons of \(U_3O_8\) are required to fuel a 1000 MWe nuclear power reactor for one year. The \(U_3O_8\) produced from the uranium mill is further enriched to increase the \(U^{235}\) content from \(0.72\%\) to between \(3\%\) and \(5\%\), which is required for light water reactors. The enrichment process involves converting uranium into uranium hexafluoride (\(UF_6\)), which is solid at room temperature but sublimates at 56.5°C, allowing it to be used in isotope separation.
+Approximately 200 tons of \(U_3O_8\) are required to fuel a 1000 MWe nuclear power reactor for one year. The \(U_3O_8\) produced from the uranium mill is further enriched to increase the \(U^{235}\) content from \(0.72\%\) to between \(3\%\) and \(5\%\), which is required for light water reactors. The enrichment process involves converting uranium into uranium hexafluoride (\(UF_6\)), which is solid at room temperature but sublimates at 56.5°C, allowing it to be used in isotope separation \cite{fuel_cycle_book}.
 
 The primary method used for isotope enrichment today is centrifugation, where thousands of rapidly spinning vertical tubes exploit the small mass difference between the uranium isotopes' hexafluorides, leading to their separation \cite{fuel_cycle_book}.
 
@@ -26,13 +26,47 @@ However the \(UF_6\) is not suitable to be used as fuel in a nuclear reactors, h
 
 The processes that occur after the discharge of irradiated fuel from the reactor, such as the temporary storage of spent fuel, reprocessing, and waste management, are collectively known as the ``backend'' of the nuclear fuel cycle. The energy realised by fission extracted from the fuel is measured as the ``burn up'' \cite{fuel_cycle_book}. The most commonly used metric for fuel burn-up is the amount of fission energy produced per unit mass of fuel. This is expressed as the total energy released, measured in megawatt-days, divided by the initial mass of fuel, including both fissile and fertile materials, and is referred to as \textit{megawatt-days per ton} \((MWd/T)\) \cite{nuclear_reactors_adv}. Since natural uranium contains only\( 0.72\%\) of the fissile isotope \(\prescript{235}{}{U}\), the burn-up of fuel based on natural uranium is expected to be below \(0.72 \, atom\%\). However, due to the breading of \(\prescript{239}{}{Pu}\) from neutron absorption in \(\prescript{238}{}{U}\), burn-up can achieve values of up to \(1 \, \text{atom} \%\) \((10,000 \, MWd/T)\) \cite{fuel_cycle_book}. In typical pressurized heavy water reactors (PHWRs), the burn-up level is around \(7000 \, MWd/T\). For light water reactors (LWRs) using enriched uranium, burn-up levels can reach \(6–7 \, \text{atom} \%\), while in fast reactors, burn-up can exceed \(10 \, \text{atom} \%\), reaching in some cases burn-up as high as \(20 \, \text{atom} \%\) has been achieved \cite{fuel_cycle_book}.
 
-However, fuel burn-up is limited by the accumulation of fission products and actinides, which absorb neutrons and negatively impact neutron economy, leading to a decrease in the reactor's efficiency. This necessitates the removal of the fuel from the reactor. Nevertheless, a typical fuel based on low enrichment uranium (LEU) still contains \(96\%\) of its original uranium content, approximately \(1\%\) of plutonium, and \(3\%\) of fission products and minor actinides \cite{fuel_cycle_book}. Thus, regardless of the type of fuel or reactor, the irradiated fuel remains a valuable source of fissile materials. Even if the uranium is depleted in terms of its fissile content, it can still be used to prepare fuel for a fast reactor by adding plutonium. Therefore, the fuel discharged from a nuclear reactor, although commonly referred to as ``spent fuel'', is not truly ``spent'' as it still contains valuable materials \cite{fuel_cycle_book}. 
+However, fuel burn-up is limited by the accumulation of fission products and actinides, which absorb neutrons and negatively impact neutron economy, leading to a decrease in the reactor's efficiency. This necessitates the removal of the fuel from the reactor. Nevertheless, a typical fuel based on low enrichment uranium (LEU) still contains \(96\%\) of its original uranium content, approximately \(1\%\) of plutonium, and \(3\%\) of fission products and minor actinides \cite{fuel_cycle_book}. Thus, regardless of the type of fuel or reactor, the irradiated fuel remains a valuable source of fissile materials. Even if the uranium is depleted in terms of its fissile content, it can still be used to prepare fuel for a fast reactor by adding plutonium. Therefore, the fuel discharged from a nuclear reactor, although commonly referred to as ``spent fuel'', is not truly ``spent'' as it still contains fissionable materials \cite{fuel_cycle_book}. 
 
 \subsection{Reprocessing}
 
-Reprocessing methods for reprocessing discharged fuel have been developed and used either at the research stage or commercial scale for uranium and thorium based fuels. Some methods are:
+Reprocessing methods for reprocessing discharged fuel have been developed and used either at the research stage or commercial scale for uranium and thorium based fuels. Some methods are \cite{Th_cycle_viability}:
 
+\begin{itemize}
+    \item Pyrometallurgy: This method utilizes heat to initiate the separation of metals from their minerals. 
+    \item Electrometallurgy: Also known as pyroprocessing, this technique employs electricity to initiate the separation of metals. However, it is still in the research stage \cite{Th_cycle_viability}.
+    \item Hydrometallurgy: This widely used method involves the use of an aqueous solution to dissolve the metal content. In the case of uranium and plutonium extraction, hydrometallurgy utilizes a solution containing \(30\%\) tri-n-butyl phosphate (TBP) in an aliphatic hydrocarbon diluent, such as kerosene or a mixture of normal paraffinic hydrocarbons, to preferentially extract U and Pu. Popularly known as PUREX by the acronym: Plutonium Uranium Redox EXtraction \cite{fuel_cycle_book}.
+\end{itemize}
 
-\section{Types of cycles}
+\subsection{Waste Management}
 
-\section{Closed cycles}
+Radioactive waste management is a crucial aspect of the nuclear energy program. The common strategy for managing radioactive waste involves vitrification, where solid waste oxides are encapsulated in borosilicate glass blocks. These glass blocks are then buried in deep geological repositories (DGRs). However, this disposal method requires long-term surveillance due to the very long half-lives of minor actinides (such as neptunium, americium, and curium) and some fission products, making the waste management program highly expensive \cite{fuel_cycle_book}.
+
+The decay of buried radionuclides takes millions of years, and it takes a significant amount of time for the radiotoxicity of long-lived radionuclides present in the waste blocks to reduce to a level comparable to that of natural uranium from natural sources\cite{fuel_cycle_book}. To address these challenges, processes for partitioning of minor actinides such as Np, Am, and Cm, as well as fission products have been developed. These processes aim to reduce the average exposure to operating personnel and can be followed by the transmutation of long-lived radionuclides in fast reactors or accelerator-driven sub-critical systems (ADS) \cite{fuel_cycle_book}.
+
+The strategy of ``Actinide Partitioning'' combined with other emerging strategies such as ``lanthanide-actinide separation'' and ``Am-Cm separation'' offers additional benefits, including the recovery of valuable materials like Am and Cm \cite{fuel_cycle_book}. In the long term, the ``Partitioning \& Transmutation'' (\(P\&T\)) strategy effectively addresses concerns about radioactive waste management and provides a potential solution for reducing the radiotoxicity of long-lived radionuclides \cite{fuel_cycle_book}.
+
+\section{Fuel Cycles}
+
+The nuclear fuel cycle can be classified into two main categories: open and closed fuel cycles. The open fuel cycle is characterized by the use of nuclear fuel without reprocessing, while the closed fuel cycle involves reprocessing the spent fuel to recover fissile materials for reuse in the reactor. The open fuel cycle is also known as the ``once-through'' fuel cycle, as the fuel is reprocessed and reused in the reactor until it is no longer economically viable \cite{fuel_cycle_book}.
+
+\subsection{Open Fuel Cycle}
+
+The open fuel cycle is the simplest and most common fuel cycle used in commercial nuclear power plants. In this cycle, the fuel is used in the reactor only once, then discharged and stored in interim storage facility where it is kept until most of the short-lived material has decayed. The spent fuel is stored in a deep geological repository (DGR) for long-term disposal. The open fuel cycle is used in the USA, UK and South Africa \cite{fuel_cycle_book}.
+
+\subsubsection{Twice-Through Fuel Cycle}
+
+This cycle reprocess the spent fuel to recover uranium and plutonium for reuse in the reactor. MOX is fabricated from the reprocessed fuel and then used in the reactor for a second time before being disposed of in a DGR similar to the ``once-through'' cycle \cite{fuel_cycle_book}. The major reason for recycling of the “spent nuclear fuel” (SNF) in the case of the “twice-through” NFC is due to the fact that the SNF still contains approximately \(96\%\) of the reusable material (U and Pu) and, hence, is still considered as an energy source due to its appreciable fissile material content. Additional cycles in a thermal reactor are not practical due to degradation of the isotopic composition of Pu \cite{fuel_cycle_book}.
+
+As compared to the “once-through” NFC, in which the SNF is stored after use and buried in DGRs after vitrification, the “twice-through” NFC can utilize \(17\%\) more natural uranium by the MOX fuel option, which can largely discount the heavy enrichment costs \cite{fuel_cycle_book}. 
+
+\subsection{Closed Fuel Cycle}
+
+The objective of the closed fuel cycle is effective utilization of fissile materials and the reduction of long-lived radioactive waste. The closed fuel cycle requires the development of advance technologies for reprocessing to achieve a sustainable NFC \cite{fuel_cycle_book}. 
+
+\subsubsection{Closed Fuel Cycle without MA Recovery}
+
+\subsubsection{Closed Fuel Cycle with MA Recovery}
+
+\subsubsection{Closed Fuel Cycle with MA and Fission Product Recovery}
+
