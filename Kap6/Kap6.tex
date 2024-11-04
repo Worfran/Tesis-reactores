@@ -96,13 +96,27 @@ The TMSR-LF is designed to produce an electrical power output of 168 MWe per uni
 
 The TMSR-LF features an online refueling system that maintains low excess reactivity, along with an off-gas system to continuously remove gaseous fission products, including xenon, helium, and tritium. This improves neutron economy and reduces the demands on the reactivity control system. For safety, a passive residual heat removal system is designed to manage heat during accident scenarios, and a passive fuel salt discharge system with a freezing valve is incorporated to safely shut down and dissipate heat under extreme conditions \cite{TMSR_book}.
 
-The TMSR-LF plant layout is divided into three main zones: the nuclear island, conventional island, and service region. The nuclear island, housing key nuclear components, is located underground to enhance safety, while the conventional island, containing auxiliary facilities like cooling towers and turbines, is placed nearby to reduce heat transfer distances. Additional auxiliary buildings, including those for hydrogen production and seawater desalination, are part of the conventional island. Administrative and service buildings are located in the service region near the plant entrance \cite{TMSR_book}.
+The TMSR-LF plant layout is divided into three main zones: the nuclear island, conventional island, and service region. The nuclear island, housing key nuclear components, is located underground to enhance safety, while the conventional island, containing auxiliary facilities like cooling towers and turbines, is placed nearby to reduce heat transfer distances. Additional auxiliary buildings, including those for hydrogen production and seawater desalination, are part of the conventional island \cite{TMSR_book}. This schematic is represented in \textbf{Fig.} \ref{fig:TMSR-LF}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.5]{Kap6/Figures_Kap6/TMSR-LF_2.png}
+    \caption{Liquid Fuel Thorium Molten Salt Reactor (TMSR-LF) design. From \textbf{Ref.} \cite{Xu2017}}
+    \label{fig:TMSR-LF}    
+\end{figure}
 
 Designed with modularity in mind, the reactor body module of the TMSR-LF has a lifespan of approximately five years, with easy installation and replacement. The reactor vessel and primary circuit are housed within a steel containment structure, which acts as an additional safety barrier. A gas layer between the containment and reactor vessel also aids in tritium removal. The TMSR-LF is a promising candidate for implementing the \(Th-U\) fuel cycle, aiming to optimize thorium resource use, reduce nuclear waste, support nonproliferation efforts, and ultimately achieve a fully closed \(Th-U\) cycle \cite{TMSR_book}.
 
 \subsubsection{Solid Fuel Thorium Molten Salt Reactor (TMSR-SF)}
 
-The TMSR-SF is a small modular fluoride salt-cooled high-temperature reactor (FHR) with an electrical power output comparable to the TMSR-LF. These nuclear systems use TRISO (Tristructural-Isotropic) fuel, where each fuel particle has a uranium dioxide (\(\text{UO}_2\)) kernel surrounded by a multi-layered coating. This coating consists of a low-density carbon buffer layer that accommodates fission gases, a silicon carbide (SiC) layer to act as a primary barrier for fission products, and two high-density isotropic pyrolytic carbon (PyC) layers encasing the SiC \cite{TRISO, IAEA_TRISO_REPORT}.
+The TMSR-SF is a small modular fluoride salt-cooled high-temperature reactor (FHR) with an electrical power output comparable to the TMSR-LF. These nuclear systems use TRISO (Tristructural-Isotropic) fuel, where each fuel particle has a uranium dioxide (\(\text{UO}_2\)) kernel surrounded by a multi-layered coating. This coating consists of a low-density carbon buffer layer that accommodates fission gases, a silicon carbide (SiC) layer to act as a primary barrier for fission products, and two high-density isotropic pyrolytic carbon (PyC) layers encasing the SiC \cite{TRISO, IAEA_TRISO_REPORT}. \textbf{Fig.} \ref{fig:TRISO} shows the structure of a TRISO particle.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.5]{Kap6/Figures_Kap6/TRISO_particle.png}
+    \caption{TRISO particle structure. From \textbf{Ref.} \cite{IAEA_TRISO_REPORT}}
+    \label{fig:TRISO}
+\end{figure}
 
 In the TMSR-SF design, the fuel pebbles are 30-mm diameter spherical elements containing TRISO particles dispersed within a graphite matrix. Each pebble houses approximately 2,400 microfuel particles with uranium kernels enriched to \(19.75 \, \%\). When the reactor core is fully loaded, it contains around \(870,000\) fuel pebbles, packed randomly to optimize neutron distribution. A sophisticated fuel handling system circulates the pebbles through various functions, including loading, discharge, purification, monitoring, and storage, using a combination of mechanical operations, buoyancy, and gravity \cite{TMSR_book}.
 
@@ -110,6 +124,13 @@ Reactivity control is maintained by a dual shutdown system. The primary system i
 
 Heat management within the TMSR-SF is achieved through salt/air heat exchangers in the secondary loops. These heat exchangers transfer heat from the salt to compressed air in the power conversion unit (PCU) using spirally fluted tube-shell designs, which enhance convective heat transfer. This system can also handle the significant pressure differences between the salt and air sides under normal operating conditions. The TMSR-SF generates electricity using an open-air Brayton cycle combined with a steam Rankine cycle, achieving thermoelectric conversion efficiencies over \(45 \, \%\). The PCU includes components such as compressors, turbines, generators, and residual heat recovery units. Purified, hot compressed air from the heat exchangers drives turbines for electricity production, while the remaining residual heat powers the steam Rankine cycle to further enhance efficiency \cite{TMSR_book}.
 
-The modular design of the TMSR-SF facilitates efficient installation and maintenance, and its inherent passive safety features enhance operational safety and flexibility. This design approach, along with an underground nuclear island setup, online refueling capabilities, and auxiliary applications such as hydrogen production or seawater desalination, makes the TMSR-SF a versatile and safe option for future thorium-based energy production \cite{TMSR_book}.
+The modular design of the TMSR-SF facilitates efficient installation and maintenance, and its inherent passive safety features enhance operational safety and flexibility. This design approach, along with an underground nuclear island setup, online refueling capabilities, and auxiliary applications such as hydrogen production or seawater desalination, makes the TMSR-SF a versatile and safe option for future thorium-based energy production \cite{TMSR_book}. \textbf{Fig.} \ref{fig:TMSR-SF} shows the TMSR-SF design. 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.5]{Kap6/Figures_Kap6/TMSR-SF.png}
+    \caption{Solid Fuel Thorium Molten Salt Reactor (TMSR-SF) design. From \textbf{Ref.} \cite{TMSR_book}}
+    \label{fig:TMSR-SF}
+\end{figure}
 
 Having talked about the thorium fuel cycle and the molten salt reactors, the next chapter delve in the simulation of the performance of MOX in a PWR. This is done to understand the behavior of the fuel and the reactor.
