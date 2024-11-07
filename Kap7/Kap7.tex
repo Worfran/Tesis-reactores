@@ -1,1 +1,18 @@
 \chapter{Simulation}
+
+In this project it was simulated a Pressurized Water Reactor (PWR) with different Thorium fuel cycles. The simulation aims to understand the behavior of thorium based nuclear fuels in a PWR. 
+
+\section{Methodology}
+
+The simulation was done using openMC, which is a library for Monte Carlo simulations of neutron transport. The code was developed by the Computational Reactor Physics Group (CRPG) at the Massachusetts Institute of Technology (MIT). 
+
+\subsection{Monte Carlo Method}
+
+The Monte Carlo method is a statistical method used to solve mathematical problems by generating random samples to obtain numerical results. The method simulates large numbers of individual particles and their interactions with the material, then it estimates the desire quantity by averaging the results of all the particles \cite{TMSR_book}. 
+
+The code is written in Fortran 2008. The code receives as input .xml files and process the information using FoX XML library \cite{OpenMC}.
+
+The Extensible Markup Language (XML) for all inputs. XML makes easier for developers to make changes in the options and FoX library handles easily these changes, as long  as the structure of the files is well defined and is consistent with the specification files.
+
+The input files are divided, three files are mandatory to run every simulation: settings, which has all the simulation parameters including the number of particles to run; materials, this files describes the composition of the material by densities and elements or nuclei, and geometry, describing the geometry of the model.
+
