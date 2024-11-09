@@ -1,7 +1,7 @@
 \documentclass[12pt,english,fleqn,openany,letterpaper,pagesize, ]{scrbook}
 
 \usepackage[utf8]{inputenc}
-\usepackage[english]{babel}%escribir con acentos sin necesidad de comandos \'{} .
+\usepackage[english]{babel}
 \usepackage{fancyhdr}
 \usepackage{fancyhdr}
 \usepackage{epic}
@@ -24,14 +24,19 @@
 \usepackage{subfigure}
 \usepackage{longtable}
 \usepackage{braket}
-%\usepackage{natbib}
 \usepackage[backend=bibtex,style=ieee,natbib=true]{biblatex}
 \usepackage{mathtools}
 \usepackage{multirow}
 \usepackage{booktabs}
+
+%errores en el compilado de la bibliografia
+%\usepackage{natbib}
 %\usepackage{cite} % Add this line for citations
 %\bibpunct{(}{)}{;}{a}{}{,} % to follow the A&A style
 
+%my imports 
+\usepackage{tcolorbox}
+\usepackage{enumitem}
 
 \usepackage{csquotes}
 %Code listing style named "mystyle"
@@ -81,7 +86,7 @@
 \marginparwidth0cm
 \parindent0cm %Define la distancia de la primera linea de un parrafo a la margen
 
-%Para tablas,  redefine el backschlash en tablas donde se define la posici\'{o}n del texto en las
+%Para tablas,  redefine el backschlash en tablas donde se define la posicion del texto en las
 %casillas (con \centering \raggedright o \raggedleft)
 \newcommand{\PreserveBackslash}[1]{\let\temp=\\#1\let\\=\temp}
 \let\PBS=\PreserveBackslash
@@ -89,7 +94,7 @@
 %Espacio entre lineas
 \renewcommand{\baselinestretch}{1.5}
 
-%Neuer Befehl f\"{u}r die Tabelle Eigenschaften der Aktivkohlen
+%Neuer Befehl fur die Tabelle Eigenschaften der Aktivkohlen
 \newcommand{\arr}[1]{\raisebox{1.5ex}[0cm][0cm]{#1}}
 
 %Neue Kommandos
