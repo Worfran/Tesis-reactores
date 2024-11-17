@@ -1,4 +1,4 @@
-\chapter{Simulation}
+\chapter{Reactor Fuel Simulations}
 In this project it was simulated a Pressurized Water Reactor (PWR) with different Thorium fuel cycles. The simulation aims to understand the behavior of thorium based nuclear fuels in a PWR. 
 
 \section{Methodology}
@@ -71,16 +71,16 @@ The project is organized into several directories and files, each serving a spec
 The simulation directory contains the core Python scripts essential for the simulation process. The ``\texttt{pwr\_model\_source.py}'' script implements the detailed fuel assembly. The ``\texttt{run\_reactor.py}'' script manages the simulation execution. The ``\texttt{plotter\_3.py}'' script processes the simulation data, generating visual representations of the results. The data directory includes critical files such as depletion chain file. The results directory stores the output files from the simulations, sorting the generated data. 
 
 \section{Results}
-Multiple simulations were conducted to evaluate the behavior of the fuel during the operation of the PWR over a period of 6 months. Simulations were performed with various thorium concentrations in uranium oxide fuel, specifically \(10 \, \%\) and \(50 \, \%\). Figures \textbf{Fig.}\ref{fig:th10} and \textbf{Fig.}\ref{fig:th50} illustrate the results of these simulations, showing the percentage change of isotopes in the fuel assembly over the simulation period. The plots indicate the achievement of breeding in the fuel assembly for \(\prescript{233}{}{U}\). However, it is noticeable that the stability of breeding is achieved much later compared to \(\prescript{239}{}{Pu}\). This is expected since the breeding of \(\prescript{233}{}{U}\) follows the chain reaction of \(\prescript{232}{}{Th} \xrightarrow{\substack{\text{neutron} \\ \text{absorption}}} \prescript{233}{}{Th} \xrightarrow{22 \, \text{minutes}} \prescript{233}{}{Pa} \xrightarrow{27 \, \text{days}} \prescript{233}{}{U}\), which is a much slower breading process than the chain reaction of \(\prescript{238}{}{U} \xrightarrow{\substack{\text{neutron} \\ \text{absorption}}} \prescript{239}{}{U} \xrightarrow{23.5 \, \text{minutes}} \prescript{239}{}{Np} \xrightarrow{2.4 \, \text{days}} \prescript{239}{}{Pu}\) for plutonium breading.
+Multiple simulations were conducted to evaluate the behavior of the fuel during the operation of the PWR over a period of 6 months. Simulations were performed with various thorium concentrations in uranium oxide fuel, specifically \(10 \, \%\) and \(50 \, \%\). Figures \textbf{Fig.} \ref{fig:th10} and \textbf{Fig.} \ref{fig:th50} illustrate the results of these simulations, showing the percentage change of isotopes in the fuel assembly over the simulation period. The plots indicate the achievement of breeding in the fuel assembly for \(\prescript{233}{}{U}\). However, it is noticeable that the stability of breeding is achieved much later compared to \(\prescript{239}{}{Pu}\). This is expected since the breeding of \(\prescript{233}{}{U}\) follows the chain reaction of \(\prescript{232}{}{Th} \xrightarrow{\substack{\text{neutron} \\ \text{absorption}}} \prescript{233}{}{Th} \xrightarrow{22 \, \text{minutes}} \prescript{233}{}{Pa} \xrightarrow{27 \, \text{days}} \prescript{233}{}{U}\), which is a much slower breading process than the chain reaction of \(\prescript{238}{}{U} \xrightarrow{\substack{\text{neutron} \\ \text{absorption}}} \prescript{239}{}{U} \xrightarrow{23.5 \, \text{minutes}} \prescript{239}{}{Np} \xrightarrow{2.4 \, \text{days}} \prescript{239}{}{Pu}\) for plutonium breading.
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=1\textwidth]{Kap7/Figures_Kap7/percentual_change_th232_con_10.pdf}
     \caption{Percentage change of isotopes in the simulation of a PWR fuel assembly using UOX at \(10 \, \%\) thorium concentration.}
     \label{fig:th10}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=1\textwidth]{Kap7/Figures_Kap7/percentual_change_th232_con_50.pdf}
     \caption{Percentage change of isotopes in the simulation of a PWR fuel assembly using UOX at \(50 \, \%\) thorium concentration.}
@@ -89,23 +89,23 @@ Multiple simulations were conducted to evaluate the behavior of the fuel during 
 
 The simulations demonstrate that a \(10 \, \%\) thorium concentration in the fuel results in a good neutronic economy, aligning with previously reported results \cite{N_Improvement}. However, a \(50 \, \%\) thorium concentration leads to subcritical reactor behavior. This result are shown in figures \textbf{Fig.}\ref{fig:p_10} and \textbf{Fig.}\ref{fig:p_10}.
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=0.75\textwidth, scale = 0.5]{Kap7/Figures_Kap7/Reactivity_vs_Time_UOX_10.pdf}
     \caption{Reactivity over time of the simulation of a PWR fuel assembly using UOX at \(10 \, \%\) thorium concentration.}
     \label{fig:p_10}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=0.75\textwidth, scale = 0.5]{Kap7/Figures_Kap7/Reactivity_vs_Time_UOX_50.pdf}
     \caption{Reactivity over time of the simulation of a PWR fuel assembly using UOX at \(50 \, \%\) thorium concentration.}
-    \label{fig:p_10}
+    \label{fig:p_50}
 \end{figure}
 
-Additional simulations were done to evaluate the behavior of thorium based fuel using thorium oxide and plutonium as seed isotope. The concentration of plutonium was set to \(10 \, \%\). The simulation shows that the fuel assembly reaches a critical state as well as it achieves a breeding ratio of \(\prescript{233}{}{U}\). However, the reactivity of the fuel assembly is higher than \(0\), this implies a more dangerous reactor behavior and additional technical issues to run it safetly. The results are shown in figures \textbf{Fig.}\ref{fig:th_pu}. The behavior of reactivity is show in figure \textbf{Fig.}\ref{fig:p_th_pu}.   
+Additional simulations were done to evaluate the behavior of thorium based fuel using thorium oxide and plutonium as seed isotope. The concentration of plutonium was set to \(10 \, \%\). The simulation shows that the fuel assembly reaches a critical state as well as it achieves a breeding ratio of \(\prescript{233}{}{U}\). However, the reactivity of the fuel assembly is higher than \(0\), this implies a more dangerous reactor behavior and additional technical issues to run it safetly. The results are shown in figures \textbf{Fig.}\ref{fig:th_pu}. The behavior of reactivity is show in figure \textbf{Fig.} \ref{fig:p_th_pu}.   
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=1\textwidth]{Kap7/Figures_Kap7/percentual_change_th232_Pu239.pdf}
     \caption{Percentage change of isotopes in the simulation of a PWR fuel assembly using ThOX and \(10 \, \%\) plutonium concentration.}
@@ -113,7 +113,7 @@ Additional simulations were done to evaluate the behavior of thorium based fuel 
 \end{figure}  
 
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=0.75\textwidth, scale = 0.5]{Kap7/Figures_Kap7/Reactivity_vs_Time_ThOX_Pu10.pdf}
     \caption{Reactivity over time of the simulation of a PWR fuel assembly using ThOX and \(10 \, \%\) plutonium concentration.}
@@ -129,9 +129,9 @@ The simulation results for ThOX with \(10 \, \%\) thorium concentration (\textbf
 
 Additionally, the simulation of ThOX with \(10 \, \%\) plutonium concentration (\textbf{Fig.}\ref{fig:th_pu}) shows that the fuel assembly reaches a critical state and achieves a breeding ratio of \(\prescript{233}{}{U}\). However, the higher reactivity of the fuel assembly implies a more dangerous reactor behavior and additional technical issues to ensure safe operation (\textbf{Fig.}\ref{fig:p_th_pu}).
 
-For comparison, the simulation using UOX as a reference (\textbf{Fig.}\ref{fig:reactivity_uox}) highlights the differences in behavior between traditional uranium-based fuels and thorium-based fuels. The results indicate that while UOX can maintain criticality, the breeding capabilities of thorium-based fuels offer potential advantages for long-term sustainability and fuel utilization.
+For comparison, the simulation using UOX as a reference (\textbf{Fig.} \ref{fig:reactivity_uox}) highlights the differences in behavior between traditional uranium-based fuels and thorium-based fuels. The results indicate that while UOX can maintain criticality, the breeding capabilities of thorium-based fuels offer potential advantages for long-term sustainability and fuel utilization.
 
-Thorium-based fuels, particularly thorium oxide with uranium-233 (\(\prescript{233}{}{U}\)), show significant promise for use in Pressurized Water Reactors . The simulations demonstrate that while it is possible to sustain a chain reaction with these fuels, achieving and maintaining criticality presents challenges. The reactivity levels observed were higher than zero and even higher than reference (\textbf{Fig.}\ref{fig:reactivity_uox}). Also, the simulation indicates difficulties in reaching a breeding condition for \(\prescript{233}{}{U}\).
+Thorium-based fuels, particularly thorium oxide with uranium-233 (\(\prescript{233}{}{U}\)), show significant promise for use in Pressurized Water Reactors. The simulations demonstrate that while it is possible to sustain a chain reaction with these fuels, achieving and maintaining criticality presents challenges. The reactivity levels observed were higher than zero and even higher than reference (\textbf{Fig.} \ref{fig:reactivity_uox}). Also, the simulation indicates difficulties in reaching a breeding condition for \(\prescript{233}{}{U}\).
 
 \vspace{90pt}
 
