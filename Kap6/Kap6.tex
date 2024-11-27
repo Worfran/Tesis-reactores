@@ -109,6 +109,42 @@ The TMSR-LF plant layout is divided into three main zones: the nuclear island, c
 
 Designed with modularity in mind, the reactor body module of the TMSR-LF has a lifespan of approximately five years, with easy installation and replacement. The reactor vessel and primary circuit are housed within a steel containment structure, which acts as an additional safety barrier. A gas layer between the containment and reactor vessel also aids in tritium removal. The TMSR-LF is a promising candidate for implementing the \(Th-U\) fuel cycle, aiming to optimize thorium resource use, reduce nuclear waste, support nonproliferation efforts, and ultimately achieve a fully closed \(Th-U\) cycle \cite{TMSR_book}.
 
+\subsubsection{Liquid Fuel Reactors Mathematical Models}
+
+Suppose an infite slab reactor in which the fuel is running at velocity \(u\), using one group apprxoimation, the static equiations is read as:
+
+\begin{flalign}
+    && D \nabla^{2} \phi(z) + \left[ \nu \Sigma_{f} (1-\beta) - \Sigma_{a}(Z) \right] \phi_{0}(z) + \lambda C_{0}(z) = 0 &&
+    \label{eq:neutron_flux_lf}
+\end{flalign}
+
+\begin{flalign}
+    && u \frac{dC_{0}(z)}{dz} = \beta\nu\Sigma_{f}\phi_{0}(z) - \lambda C_{0}(z) &&
+    \label{eq:precursors_equations}
+\end{flalign}
+
+Previously we defined the boundary conditions for the neutron flux vanishing at the extrapolated boundaries to be zero. Now we define the boundary conditions for the precursor concentration to be:
+
+\begin{flalign}
+    && C_{0} = C_{0}(H) e^{-\lambda \tau_{L}} &&
+    \label{eq:precursors_boundary}
+\end{flalign}
+
+Where \(z = 0\) and \(z = H\) are the extrapolated boundaries and \(\tau_{L}\) is the transit time of the fuel in the external loop \cite{Analytical}. In solid fuel reactors the precursors disappear from the static equations, making possible to solve the equations for the neutron flux without specifying the precursor boundaries conditions \cite{Analytical}. Solving for the precursors, using \textbf{eq.} \ref{eq:precursors_equations} and \textbf{eq.} \ref{eq:precursors_boundary}, the precursor concentration is given by:
+
+\begin{flalign}
+    && C_{0}(z) = e^{- \lambda \tau_{L}/u} \left( \frac{1}{e^{\lambda \tau} - 1} \int_{0}^{H} e^{- \lambda z'/u} \phi_{0}(z') dz' + \int_{0}^{H} e^{- \lambda z'/u} \phi_{0}(z') dz' \right) &&
+\end{flalign}
+
+Where \(\tau\) is the total recirculation time, which is the sum of the transit time of the fuel in the external loop and the time the fuel spends in the reactor \cite{Analytical}. For now on we are going to assume that the fuel velocity is the same in the external loop and in the reactor. However, this approximation is not valid for molten salt reactors, but this can be solved by re-scaling the external length to be \(L = u/u'\cdot T' \) such that \(\tau_{L} = L'/u' = L/u\). Using equation \ref{eq:neutron_flux_lf}, one obtains:
+
+\begin{flalign}
+    D \nabla^{2} \phi_{0}(z) + \left[ \nu \Sigma_{f} (1-\beta) - \Sigma_{a} \right] \phi_{0}(z) && \nonumber \\  
+    + e^{-\lambda z/u} \frac{\lambda \beta \nu \Sigma_{f}}{u} \left(  \frac{1}{e^{\lambda \tau} - 1} \int_{0}^{H} e^{- \lambda z'/u} \phi_{0}(z') dz' + \frac{\beta \nu \Sigma_{f}}{u} \int_{0}^{z} e^{- \lambda z'/u} \phi_{0}(z') dz' \right) = 0 &&
+\end{flalign}
+
+There are multiple scenarios to explore the solutions to the equations of liquid fuel reactors. One possible solution is taking the limit \(u \to \infty\). Another approximation is to consider a long recirculation time \(\tau \to \infty\), which means no recirculation of precursors. Solving for this second scenario allows for an analysis of the static case, which can then be compared to the scenario with full recirculation and infinite velocity to highlight the differences. Without recirculation, the delayed precursor distribution becomes more asymmetric, leading to a similarly asymmetric flux distribution. This scenario is particularly valuable for examining the significance of various boundary conditions, as it represents a limiting case that emphasizes the role of system geometry and flux dynamics. More details on this analytical solution can be found in \textbf{Ref.} \cite{Analytical}.
+
 \subsubsection{Solid Fuel Thorium Molten Salt Reactor (TMSR-SF)}
 
 The TMSR-SF is a small modular fluoride salt-cooled high-temperature reactor (FHR) with an electrical power output comparable to the TMSR-LF. These nuclear systems use TRISO (Tristructural-Isotropic) fuel, where each fuel particle has a uranium dioxide (\(\text{UO}_2\)) kernel surrounded by a multi-layered coating. This coating consists of a low-density carbon buffer layer that accommodates fission gases, a silicon carbide (SiC) layer to act as a primary barrier for fission products, and two high-density isotropic pyrolytic carbon (PyC) layers encasing the SiC \cite{TRISO, IAEA_TRISO_REPORT}. \textbf{Fig.} \ref{fig:TRISO} shows the structure of a TRISO particle.
