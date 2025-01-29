@@ -1,0 +1,65 @@
+T. J. Dolan, Molten Salt Reactors and Thorium Energy, 1st ed., Woodhead Publishing, 2017. ISBN: 9780081011263.
+
+J. R. Lamarsh y A. J. Baratta, Introduction to nuclear engineering, Prentice Hall; Pearson Education distributor, 2009.
+
+K. Kornecki y C. F. Wise, "The role of advanced nuclear reactors and fuel cycles in a future energy system," PNAS Nexus, vol. 3, n.º 2, enero 2024. DOI: 10.1093/pnasnexus/pgae030.
+
+E. E. Lewis, Fundamentals of Nuclear Reactor Physics, Elsevier e-books, Amsterdam, 2014.
+
+W. M. Stacey, Nuclear reactor physics, Wiley-VCH-Verl, Weinheim, 2010.
+
+J.-L. Basdevant, J. Rich y M. Spiro, Fundamentals in nuclear physics: from nuclear structure to cosmology, 1st ed., Springer, 2005. ISBN: 9780387016726.
+
+K. S. Krane, Introductory Nuclear Physics, 2nd ed., John Wiley, 1988. ISBN: 9780471805533.
+
+International Atomic Energy Agency, Thorium Fuel Cycle — Potential Benefits and Challenges, IAEA-TECDOC-1450, Vienna, Austria, 2005. ISBN: 92-0-103405-9. URL: https://www.iaea.org/publications/7196/thorium-fuel-cycle-potential-benefits-and-challenges.
+
+A. Asghari, "The Water Neutron Detector (WaND)," 2016. URL: https://api.semanticscholar.org/CorpusID:100282839.
+
+National Nuclear Data Center, "National Nuclear Data Center," 2024. URL: https://www.nndc.bnl.gov/. Accessed: 2024-08-24.
+
+J. C. Sanabria, "Reactores nucleares - Notas de clase," 2021. Unpublished.
+
+P. Mohanakrishnan (editor), O. P. Singh (editor) y K. Umasankari (editor), Physics of Nuclear Reactors, 1st ed., Academic Press, 2021. ISBN: 9780128224410.
+
+B. S. Tomar, P. R. Vasudeva Rao, S. B. Roy, J. P. Panakkal, K. Raj y A. N. Nandakumar, Nuclear Fuel Cycle, Springer, 2023. ISBN: 9789819909483.
+
+E. E. Lewis, Fundamentals of Nuclear Reactor Physics, Academic Press, 2008. ISBN: 9780123706317.
+
+U. E. Humphrey y M. U. Khandaker, "Viability of thorium-based nuclear fuel cycle for the next generation nuclear reactor: Issues and prospects," Renewable and Sustainable Energy Reviews, vol. 97, págs. 259-275, 2018. DOI: https://doi.org/10.1016/j.rser.2018.08.019. URL: https://www.sciencedirect.com/science/article/pii/S1364032118305951.
+
+INTERNATIONAL ATOMIC ENERGY AGENCY, Thorium Fuel Cycle - Potential Benefits and Challenges, TECDOC Series, n.º 1450, Vienna, 2005. ISBN: 92-0-103405-9. URL: https://www.iaea.org/publications/7192/thorium-fuel-cycle-potential-benefits-and-challenges.
+
+Servicio Geológico Colombiano, "Atlas Geoquímico de Colombia: Concentración de Torio (Th)," Bogotá: Servicio Geológico Colombiano, versión 2020. URL: https://www.sgc.gov.co.
+
+Deutsches Institut für Normung e.V. (DIN), "Measurement of radioactivity in the environment - Air: radon-222 Pt 11: Test method for soil gas with sampling at depth (ISO 11665-11:2016); German version EN ISO 11665-11:2019," Beuth Verlag, Berlin, Germany, 2020.
+
+Haynes International Inc., "Nickel Alloy Brochure," 2024. URL: https://haynesintl.com/wp-content/uploads/2024/05/n-brochure.pdf. Accessed: 2024-10-07.
+
+D. A. Andersson, C. R. Stanek, C. Matthews y otros, "The past, present, and future of nuclear fuel," MRS Bulletin, vol. 48, págs. 1154-1162, 2023. DOI: 10.1557/s43577-023-00631-3. URL: https://doi.org/10.1557/s43577-023-00631-3.
+
+INTERNATIONAL ATOMIC ENERGY AGENCY, Performance Analysis Review of Thorium TRISO Coated Particles During Manufacture, Irradiation and Accident Condition Heating Tests, TECDOC Series, n.º 1761, Vienna, 2015. ISBN: 978-92-0-100715-5. URL: https://www.iaea.org/publications/10844/performance-analysis-review-of-thorium-triso-coated-particles-during-manufacture-irradiation-and-accident-condition-heating-tests.
+
+H. Xu, "The Development of TMSR Technology in China," 2017. URL: https://www.gen-4.org/gif/upload/docs/application/pdf/2017-05/03_hongjie_xu_china.pdf. Accessed: 2024-10-07.
+
+P. V. Achuthan y A. Ramanujam, "Aqueous Reprocessing by THOREX Process," en Thoria-based Nuclear Fuels: Thermophysical and Thermodynamic Properties, Fabrication, Reprocessing, and Waste Management, eds. D. Das y S. R. Bharadwaj, Springer London, London, 2013, págs. 279-333.
+
+I. Pázsit, A. Jonsson y L. Pál, "Analytical solutions of the molten salt reactor equations," Annals of Nuclear Energy, vol. 50, págs. 206-214, 2012. DOI: https://doi.org/10.1016/j.anucene.2012.05.037. URL: https://www.sciencedirect.com/science/article/pii/S030645491200237X.
+
+P. K. Romano, N. E. Horelik, B. R. Herman, A. G. Nelson, B. Forget y K. Smith, "OpenMC: A state-of-the-art Monte Carlo code for research and development," Annals of Nuclear Energy, vol. 82, págs. 90-97, 2015. DOI: https://doi.org/10.1016/j.anucene.2014.07.048. URL: https://www.sciencedirect.com/science/article/pii/S030645491400379X.
+
+C. Josey, B. Forget y K. Smith, "High order methods for the integration of the Bateman equations and other problems of the form of y=F(y,t)y," Journal of Computational Physics, vol. 350, págs. 296-313, 2017. DOI: https://doi.org/10.1016/j.jcp.2017.08.025. URL: https://www.sciencedirect.com/science/article/pii/S002199911730596X.
+
+The OpenMC Development Team, "OpenMC Documentation," 2024. URL: https://docs.openmc.org/en/stable/. Accessed: 2024-10-07.
+
+The HDF Group, "HDF5 Documentation," 2024. URL: https://support.hdfgroup.org/documentation/. Accessed: 2024-10-07.
+
+C. W. Lau, C. Demazière, H. Nylén y U. Sandberg, "Improvement of LWR thermal margins by introducing thorium," Progress in Nuclear Energy, vol. 61, págs. 48-56, 2012. DOI: https://doi.org/10.1016/j.pnucene.2012.07.004. URL: https://www.sciencedirect.com/science/article/pii/S0149197012000972.
+
+S. Si, "Roadmap Design for Thorium-Uranium Breeding Recycle in PWR," International Atomic Energy Agency (IAEA), Vienna, Austria, 2011.
+
+C. W. Lau, C. Demazière, H. Nylén y U. Sandberg, "Improvement of LWR thermal margins by introducing thorium," Progress in Nuclear Energy, vol. 61, págs. 48-56, 2012. DOI: https://doi.org/10.1016/j.pnucene.2012.07.004. URL: https://www.sciencedirect.com/science/article/pii/S0149197012000972.
+
+A. F. Porras-Ríos y J. de J. Díaz-Velásquez, "El uranio como recurso energético y su actualidad minera en Colombia," DYNA, vol. 86, n.º 208, págs. 362-367.
+
+NEA, Uranium 2011: Resources, Production and Demand, OECD Publishing, Paris, 2012.
